@@ -52,10 +52,12 @@ class FilteredFibs:
             raise StopIteration
 
 
-filt_fibs = FilteredFibs(max=4000000, sequence='evens')
+filt_fibs = FilteredFibs(max=1e100, sequence='evens')
 ffi = iter(filt_fibs)
 for fib in ffi:
-    print(ffi.rolling_sum)
+    pass
+
+print(ffi.rolling_sum)
 
 
 
